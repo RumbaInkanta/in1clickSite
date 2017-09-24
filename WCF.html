@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Выше 3 Мета-теги ** должны прийти в первую очередь в голове; любой другой руководитель контент *после* эти теги -->  
+    <title>In1click</title>
+
+    <!-- Bootstrap --> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->  
+    <!-- Предупреждение: Respond.js не работает при просмотре страницы через файл:// -->  
+    <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script >
+ <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->  
+  </head>
+  <body>
+<div class="page-wrapper">  
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand и toggle сгруппированы для лучшего отображения на мобильных дисплеях -->  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Меню</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">In1click</a>
+    </div>
+    <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->  
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="MacOSX.html">Mac OS X<span class="sr-only">(current)</span></a></li>
+        <li><a href="Angular.html">Angular JS</a></li>
+        <li><a href="EntityFramework.html">Entity Framework</a></li>
+        <li><a href="AppleAutomator.html">Apple Automator</a></li>
+        <li class="active"><a href="WCF.html">WCF</a></li>
+        <li><a href="LinQ.html">LinQ</a></li>        
+      <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Уроки по WCF Часть 1<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#Y1">Создание ASP.NET Web Service и .NET Remoting Service</a></li>
+            <li><a href="#Y2">Создание WCF-сервиса</a></li>
+            <li><a href="#Y3">Создание WCF-сервиса с несколькими ServiceContract</a></li>            
+            <li><a href="#Y4">Изменение ServiceContract без изменения клиентов</a></li>
+            <li><a href="#Y5">DataContract</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#Y6">Атрибут KnowType</a></li>
+            <li><a href="#Y7">Способы указания атрибута KnowType</a></li>
+            <li><a href="#Y8">Настройка записи логов</a></li>
+            <li><a href="#Y9">Использование MessageContract</a></li>
+            <li><a href="#Y10">Обратная совместимость при изменении сервиса</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#Y11">Интерфейс IExtensibleDataObject</a></li>
+            <li><a href="#Y12">Необработанные исключения на стороне сервиса</a></li>
+            <li><a href="#Y13">FaultException и WCF-сессии</a></li>
+            <li><a href="#Y14">Типизированный FaultException</a></li>
+            <li><a href="#Y15">Создание универсального обработчика исключений</a></li>
+            
+          </ul>
+        </li>
+        <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Часть 2<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a href="#Y16">Различные способы добавления ServiceBehavior</a></li>
+            <li><a href="#Y17">Динамическое конфигурирование хоста</a></li>
+            <li><a href="#Y18">Хостинг WCF-сервиса в службе Windows</a></li>
+            <li><a href="#Y19">Однонаправленный обмен сообщениями в WCF</a></li>
+            <li><a href="#Y20">Двунаправленный обмен сообщениями в WCF</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#Y21">InstanceContextMode</a></li>
+            <li><a href="#Y22">Получение идентификатора сессии (Session ID)</a></li>
+            <li><a href="#Y23">ConcurrencyMode</a></li>
+            <li><a href="#Y24">Reentrant Concurrency и Multiple Concurrency</a></li>
+            <li><a href="#Y25">Service Throttling</a></li>
+            <li><a href="#Y26">Аутентификация в WCF</a></li>
+          </ul>
+        </li>              
+      </ul>
+      
+      <!--<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Поиск">
+        </div>
+        <button type="submit" class="btn btn-default">Найти</button>
+      </form>-->
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li><a href="#">Карта сайта</a></li>-->
+        <li><a href="Contacts.html">О нас</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->  
+  </div><!-- /.container-fluid -->  
+</nav>
+
+                                    <!--Контент-->
+
+<div class="aside">
+    <div class="container">
+      <div class="row">
+        <div class="content-page">
+
+          <!--блок контента-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y1"></a> <center>Создание ASP.NET Web Service и .NET Remoting Service</center></div>
+              <div class="panel-body">
+                <p>Windows Communication Foundation (WCF) — программный фреймворк, используемый для обмена данными между приложениями, входящий в состав .NET Framework. До своего выпуска в декабре 2006 года в составе .NET Framework 3.0, WCF был известен под кодовым именем Indigo.<br>WCF делает возможным построение безопасных и надёжных транзакционных систем через упрощённую унифицированную программную модель межплатформенного взаимодействия. Комбинируя функциональность существующих технологий .NET по разработке распределённых приложений (ASP.NET XML Web Services — ASMX, WSE 3.0, .NET Remoting, .NET Enterprise Services и System.Messaging), WCF предоставляет единую инфраструктуру разработки, при умелом применении повышающую производительность и снижающую затраты на создание безопасных, надёжных и транзакционных Web-служб нового поколения. Заложенные в неё принципы интероперабельности позволяют организовать работу с другими платформами, для чего используются технологии взаимодействия платформ, например WSIT, разрабатываемые на базе открытого исходного кода.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/GS9JfGxO6o8" allowfullscreen></iframe>
+          </div>
+                                    <!--2 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y2"></a> <center>Создание WCF-сервиса</center></div>
+              
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/KY1w9nwRL5I" allowfullscreen></iframe>
+          </div>
+
+                                  <!--3 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y3"></a> <center>Создание WCF-сервиса с несколькими ServiceContract</center></div>
+              
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/YUOnCbEuAzU" allowfullscreen></iframe>
+          </div>
+
+                                  <!--4 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y4"></a> <center>Изменение ServiceContract без изменения клиентов</center></div>
+              
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/HgVu3PpIsDM" allowfullscreen></iframe>
+          </div>
+
+                                  <!--5 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y5"></a> <center>DataContract</center></div>
+              
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/erjm4shd-80" allowfullscreen></iframe>
+          </div>
+
+                                  <!--6 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y6"></a> <center>Атрибут KnowType</center></div>
+              <div class="panel-body">
+                <p>В данном видео рассматривается использование атрибута KnowType, позволяющего указать сериализатору все типы, которые необходимо передать клиенту помимо DataContract'а.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/JAUxjQNBUr8" allowfullscreen></iframe>
+          </div>
+
+                                  <!--7 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y7"></a> <center>Способы указания атрибута KnowType</center></div>
+              <div class="panel-body">
+                <p>Рассматриваются четыре способа указания атрибута KnowType:<br>1) Указание атрибута KnowType у DataContract'а<br>2) Указание атрибута ServiceKnowType у ServiceContract'а<br>3) Указание ServiceKnowType у OperationContract'а<br>4) Указание всех типов (DataContract и KnowType) в конфигурационном файле хост-приложения.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/rhzg9DZ_DZ4" allowfullscreen></iframe>
+          </div>
+
+                                  <!--8 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y8"></a> <center>Настройка записи логов</center></div>
+              <div class="panel-body">
+                <p>Показано использование инструмента WCF Service configuration tool для настройки трассировки и логирования XML сообщений между сервисом и клиентом.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/qhMQKeoNyOw" allowfullscreen></iframe>
+          </div>
+
+                                  <!--9 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y9"></a> <center>Использование MessageContract</center></div>
+              <div class="panel-body">
+                <p>Рассматривается использование атрибута MessageContract вместо DatatContract. Данный атрибут позволяет более гибко настраивать XML-сообщение для сервиса, в частности размещать дополнительную информацию в заголовке сообщения.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/M-eb7N2Q64g" allowfullscreen></iframe>
+          </div>
+
+                                  <!--10 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y10"></a> <center>Обратная совместимость при изменении сервиса</center></div>
+              <div class="panel-body">
+                <p>В данном видео рассмотрены возможные изменения сервиса и их последствия для клиента.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/IixJuJfvUNc" allowfullscreen></iframe>
+          </div>
+
+                                  <!--11 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y11"></a> <center>Интерфейс IExtensibleDataObject</center></div>
+              <div class="panel-body">
+                <p>Интерфейс IExtensibleDataObject позволяет создавать DataContract'ы, содержащие свойство ExtensionData, в которое помещаются все XML-элементы, которые не удалось десериализовать серверу или клиенту. Таким образом можно застраховать себя от потери данных как на стороне клиента, так и на стороне сервиса при любых изменениях DataContract'а на любой стороне.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/rLHDLI512PQ" allowfullscreen></iframe>
+          </div>          
+
+                                  <!--12 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y12"></a> <center>Необработанные исключения на стороне сервиса</center></div>
+              <div class="panel-body">
+                <p>Рассмотрен WCF-атрибут IncludeExceptionDetailInFaults, указывающий следует ли включать в Fault-сообщения, посылаемые клиенту, полный текст исключения и внутренние параметры исключений. По умолчанию данный атрибут имеет значение false. Сделано это в целях безопасности, чтобы предотвратить отправку клиенту внутренних параметров состояния сервиса. Однако для отладки сервиса бывает полезно установить этот атрибут в значение true.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/7BYGNxG-gwE" allowfullscreen></iframe>
+          </div> 
+
+                                      <!--13 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y13"></a> <center>FaultException и WCF-сессии</center></div>
+              <div class="panel-body">
+                <p>Рассмотрены различные варианты возникновения необработанных исключений на сервисе и их влияние на клиента. Разобраны случаи с созданием сессии (wsHttpBinding) и без неё (basicHttpBinding).<br>Во второй части видео рассмотрено исключение FaultException, которое, в отличие от других .NET исключений, не приводит к уничтожению канала связи между сервером и клиентом. Таким образом даже после генерирования этого исключения и перехвата его на клиентской стороне можно продолжить пользоваться существующим экземпляром клиента и не инициализировать новое подключение.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/U7m1SnPv7Ew" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--14 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y14"></a> <center>Типизированный FaultException</center></div>
+              <div class="panel-body">
+                <p>Разновидность класса FaultException с Generic-параметром, указывающим тип поля Details, которое будет присутствовать в экземпляре FaultException и может быть прочитано на стороне клиента. Позволяет включить в FaultException любую информацию.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/9ZBhVI898P4" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--15 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y15"></a> <center>Создание универсального обработчика исключений</center></div>
+              <div class="panel-body">
+                <p>Показана реализация интерфейса IErrorHandler, позволяющая создать обработчик необработанных исключений на стороне сервиса. Содержит 2 метода:<br>ProviderFault - создаёт Fault-сообщение для протокола SOAP, которое будет передано клиенту.<br>HandleError - вызывается асинхронно после ProviderFault, чтобы не замедлять работу клиента. Содержит код обработки исключения (можно добавить логирование и т д).
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/PU4_SQYtO9g" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--16 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y16"></a> <center>Различные способы добавления ServiceBehavior</center></div>
+              <div class="panel-body">
+                <p>Описаны три способа расширения поведения сервиса (добавления ServiceBehavior):<br>1) Добавление экземпляра, реализующего IServiceBehavior, прямо в коде (при создании экземпляра ServiceHost) - самый простой вариант, но, потенциально, самый проблемный. Отсутствует необходимая гибкость (если, например, мы захотим использовать другой ErrorHandler). Так же невозможно использование с несколькими сервисами (придётся прописывать строку добавления ServiceBehavior для каждого хоста).<br>2) Создание атрибута, реализующего IServiceBehavior. Данным атрибутом могут быть помечены любые сервисы, а кастомные конструкторы позволит гибко настраивать наш ServiceBehavior.<br>3) Создание элемента конфигурации (наследника BehaviorExtensionElement). После создания, данный класс регистрируется в config-файле хоста и прописывается любому сервису. Атрибут ConfigurationProperty позволяет создать любое количество параметров для элемента конфигурации (на манер кастомных конструкторов у атрибута). Данный способ наиболее гибкий, так как позволяет изменить используемый ErrorHandler, не прибегая к запуску студии и повторной сборке проекта. Всё, что вам потребуется: исправить config и перезапустить хост.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/Ie24J1fvGHo" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--17 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y17"></a> <center>Динамическое конфигурирование хоста</center></div>
+              <div class="panel-body">
+                <p>В данном видео рассмотрен вариант конфигурирование сервис-хоста напрямую в коде, избегая настройки endpoint'ов и behavior'ов в config-файле.<br>Для обмена метаданными создаётся экземпляр ServiceMetadataBehavior и добавляется в коллекцию Behaviors нашего хоста.<br>endpoint добавляется при помощи метода AddServiceEndpoint() и по-прежнему принимает три параметра: адрес сервера, на который следует обратиться клиенту (указывается именно относительный адрес), реализуемый ServiceContract и необходимый binding для обмена информацией.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/jZyyjA3paKk" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--18 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y18"></a> <center>Хостинг WCF-сервиса в службе Windows</center></div>
+              <div class="panel-body">
+                <p>Для поднятия WCF-сервиса возможно создание Windows-службы, которая будет запускать наш сервис. Для этого к нашему солюшену добавим проект типа WindowsService, пропишем код запуска и остановки сервиса и добавим установщик.<br>Преимущества хостинга на Windows-службе:<br>- Windows-служба работает под нулевым сеансом. Это значит, что ваш сервис будет доступен сразу после запуска ПК (если у службы включен режим автозапуска). И никаких дополнительных действий по запуску сервиса не требуется.<br>- Можно настроить автоматические действия при сбое сервиса (перезапуск сервиса, перезапуск ПК итд)<br>Недостатки:<br>- WCF-сервис, работающий под Windows-службой труднее отлаживать, так как код службы невозможно запустить из-под Visual Studio. Придётся пользоваться сторонними отладчиками.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/XU9SogmklK4" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--19 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y19"></a> <center>Однонаправленный обмен сообщениями в WCF</center></div>
+              <div class="panel-body">
+                <p>Однонаправленный обмент сообщениями - архитектура, при которой только клиент может вызвать методы WCF-сервиса. Сервис, в свою очередь, может лишь отвечать на запросы клиентов, но не может самостоятельно вызывать какие-либо методы на стороне клиента.<br>Существуют два способа организации однонаправленного обмена сообщениями:<br>1) Request/Response - создаём обычный OperationContract. По умолчанию параметр IsOneWay равен false. Это означает, что клиент будет дожидаться окончания обработки запроса на сервере до тех пор, пока сервис не пришлёт Response (ответ) о том, что обработка завершена. Данный способ может приводить к значительным временным задержкам на стороне клиента при высокой сложности обработчика на сервисе, либо при высокой нагрузке на сервис. Однако плюсом является то, что сервис может возвращать любую информацию клиенту.<br>2) IsOneWay-операции - создаём OperationContract с параметром IsOneWay = true. Это приведёт к тому, что клиенты отправив Request (запрос) на выполнение операции сервиса, не будут дожидаться окончания его обработки. Таким образом задержки на стороне клиента сведутся к минимуму, но это приведёт к невозможности передачи какой-либо информации от сервиса клиенту. Это касается в том числе возникших исключений на стороне сервиса. OneWay-методы не могут содержать out-параметры и также не могут возвращать никаких значений клиенту (возвращаемый тип всегда void).
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/N93dwX2wiEA" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--20 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y20"></a><center>Двунаправленный обмен сообщениями в WCF</center></div>
+              <div class="panel-body">
+                <p>Двунаправленный обмен сообщениями означает, что инициировать обмен данными может любая сторона - как сервис, так и клиент. Сервис предоставляет клиенту интерфейс, называемый ServiceContract, а клиент, в свою очередь предоставляет сервису Callback - интерфейс, которы реализуется на стороне клиента и методы которого могут быть вызваны со стороны сервиса.<br>Для реализации такой модели обмена необходимо создать помимо интерфейса ServiceContract ещё и CallbackContract. Клиент должен предоставить сервису свой контекст, из которого сервис извлечёт callback для реализации обратной связи с клиентом.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/YQM2HpWEbGk" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--21 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y21"></a> <center>InstanceContextMode</center></div>
+              <div class="panel-body">
+                <p>InstanceContextMode - параметр атрибута ServiceBehavior, характеризующий механизм создания новых экземпляров WCF-сервиса. Может иметь 3 значения:<br>1) PerCall - для каждого вызова метода со стороны клиента создаётся независимый экземпляр сервиса. После завершения вызова экземпляр уничтожается. Обеспечивает более высокую производительность, но не сохраняет состояние между вызовами.<br>2) PerSession - для каждой клиентской сессии создаётся новый экземпляр сервиса. После завершения сессии экземпляр уничтожается. Данный механизм позволяет сохранять внутреннее состояние сервиса в рамках одной сессии.<br>3) Single - создаётся один экземпляр сервиса для всех клиентов. Экземпляр уничтожается только при остановке сервиса. Позволяет сохранять внутреннее состояние сервиса на протяжении всего времени работы и обмениваться информацией между клиентами, но потенциально является самым сложным в реализации (из-за необходимости реализации механизма блокировок).
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/z9VnwtouB4Q" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--22 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y22"></a> <center>Получение идентификатора сессии (Session ID)</center></div>
+              <div class="panel-body">
+                <p>Идентификатор сессии WCF - уникальная текстовая строка, однозначно определяющая канал связи между сервисом и клиентом.<br>На стороне сервиса идентификатор сессии хранится в свойстве OperationContext.Current.SessionId.<br>На стороне клиента необходимо обратиться к каналу связи экземпляра клиента и получит его свойство SessionId.<br>По умолчанию идентификаторы на стороне сервиса и клиента отличаются друг от друга, так как генерируются независимо, но мы можем это исправить, создав на стороне сервиса новый bindingConfiguration с параметром reliableSession = true. Если этот параметр равен true, то все обязанности по генерированию Session ID берёт на себя сервис. В этом случае идентификатор, сгенерированный на сервисе, будет передан клиенту при первом обращении.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/siQF7AuA29k" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--23 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y23"></a> <center>ConcurrencyMode</center></div>
+              <div class="panel-body">
+                <p>ConcurrencyMode - параметр, указывающий, как следует регулировать доступ нескольких потоков (конкурентный доступ) к экземпляру сервиса.<br>Политика создания экземпляра задаётся параметром InstanceContextMode, рассмотренным ранее.<br>В данном видео рассматривается режим Single ConcurrencyMode, который запрещает конкурентный доступ к экземпляру сервиса. Это значит, что для обеспечения конкурентного доступа придётся создать несколько экземпляров сервиса - по одному на каждую сессию (параметр PerSession). В этом случае клиенты не будут блокировать друг друга.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/yUqD0mefkQg" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--24 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y24"></a> <center>Reentrant Concurrency и Multiple Concurrency</center></div>
+              <div class="panel-body">
+                <p>ConcurrencyMode - параметр, указывающий, как следует регулировать доступ нескольких потоков (конкурентный доступ) к экземпляру сервиса.<br>В данном видео рассмотрены 2 режима ConcurrencyMode:<br>1) Reentrant - поведение схожее с single, за исключением случаев обращения к Callback'у. Если callback-операция без параметра IsOneWay - reentrant mode позволяет корректно получить response и избежать появления Deadlock'а (ситуации, когда каждая сторона не может завершить вызов, пока этого не сделает противоположная сторона).<br>2) Multiple - наиболее свободный режим конкурентного доступа. Позволяет получать доступ к сервису как к обычному классу - то есть из нескольких потоков одновременно. В случае использования этого режима необходимо предусмотреть блокировки потоков при обращении к общим ресурсам.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/Dilq1sGbhP4" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--25 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y25"></a> <center>Service Throttling</center></div>
+              <div class="panel-body">
+                <p>Service Throttling - это Service Behavior, задающий максимально возможное количество вызовов к экземпляру сервиса, самих экземпляров и количество сессий.<br>В данном видео рассматривается применение данного  Behavior'а с различными InstanceContextMode'ами.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/qW-g7dHraoM" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--26 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y26"></a> <center>Аутентификация в WCF</center></div>
+              <div class="panel-body">
+                <p>По умолчанию wsHttpBinding и netTcpBinding поддерживают Windows-аутентификацию пользователей (в том числе при помощи сертификатов).<br>В данном видео рассматривается использование класса ServiceSecurityContext для определения имени пользователя Windows, обращающегося к сервису и прохождения им процедуры Windows-аутентификации.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/gZNKR3yAWTE" allowfullscreen></iframe>
+          </div> 
+        </div>
+
+      <!--                                
+        <aside class="col-xs-6 col-sm-3 col-md-3 col-lg-3 context">
+          <div class="row">
+            <div class="col-lg-12">
+
+            </div>
+          </div>
+        </aside>
+                                
+        <article class="col-xs-6 col-sm-9 col-md-9 col-lg-9">
+          <div class="row">
+            <div class="col-lg-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sint sit quis eos maiores aliquid unde molestiae odit, recusandae deleniti, harum necessitatibus nobis a error repellat atque </div>
+          </div>
+        </article>
+       -->              
+      </div>
+    </div>
+  <div class="page-buffer"></div>
+</div>
+</div>
+
+<section class="footer">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Курсы</h4>
+                  <ul>
+                      <li class="line_rv"><a href="MacOSX.html">Mac OS X</a></li>
+               
+                        <li><a href="Angular.html">Angular JS</a></li>
+                        <li><a href="WCF.html">WCF</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Курсы</h4>
+                  <ul>
+                      <li><a href="AppleAutomator.html">Apple Automator</a></li>
+                        <li><a href="EntityFramework.html">Entity Framework</a></li>
+                        <li><a href="LinQ.html">LinQ</a></li>
+                        
+                       
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Связаться с нами</h4>
+                  <p><a href="https://plus.google.com/u/0/105254541079033546156">Google+</a></p>
+            <p><a href="http://www.youtube.com/user/inoneclick/">YouTube</a><br>
+
+        
+                </p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- на jQuery (необходим для Bootstrap - х JavaScript плагины) -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Включают все скомпилированные плагины (ниже), или включать отдельные файлы по мере необходимости -->  
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

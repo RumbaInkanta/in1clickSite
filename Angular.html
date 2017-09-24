@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Выше 3 Мета-теги ** должны прийти в первую очередь в голове; любой другой руководитель контент *после* эти теги -->  
+    <title>In1click</title>
+
+    <!-- Bootstrap --> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->  
+    <!-- Предупреждение: Respond.js не работает при просмотре страницы через файл:// -->  
+    <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script >
+ <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->  
+  </head>
+  <body>
+<div class="page-wrapper">  
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand и toggle сгруппированы для лучшего отображения на мобильных дисплеях -->  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Меню</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">In1click</a>
+    </div>
+    <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->  
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="MacOSX.html">Mac OS X<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="Angular.html">Angular JS</a></li>
+        <li><a href="EntityFramework.html">Entity Framework</a></li>
+        <li><a href="AppleAutomator.html">Apple Automator</a></li>
+        <li><a href="WCF.html">WCF</a></li>
+        <li><a href="LinQ.html">LinQ</a></li>        
+      <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Уроки по Angular JS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#Y1">Обзор Angular JS</a></li>
+            <li><a href="#Y2">Scope в Angular JS</a></li>
+            <li><a href="#Y3">Инжекция зависимостей</a></li>
+            <!--<li role="separator" class="divider"></li>-->
+            <li><a href="#Y4">Data Binding</a></li>
+            <li><a href="#Y5">Директивы</a></li>
+            <li><a href="#Y6">Http-запросы</a></li>
+            <li><a href="#Y7">$http-сервис</a></li>
+            <li><a href="#Y8">Хэш-символ</a></li>
+            <li><a href="#Y9">Маршрутизация и шаблоны</a></li>
+            <li><a href="#Y10">Создание сервиса</a></li>
+            <li><a href="#Y11">Создание директивы</a></li>
+            <li><a href="#Y12">Атрибуты и изолированный scope в директивах</a></li>
+            <li><a href="#Y13">Compile and Linking</a></li>
+            <li><a href="#Y14">Трансклюзия</a></li>
+          </ul>
+        </li>       
+      </ul>
+      
+      <!--<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Поиск">
+        </div>
+        <button type="submit" class="btn btn-default">Найти</button>
+      </form>-->
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li><a href="#">Карта сайта</a></li>-->
+        <li><a href="Contacts.html">О нас</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->  
+  </div><!-- /.container-fluid -->  
+</nav>
+
+                                    <!--Контент-->
+
+<div class="aside">
+    <div class="container">
+      <div class="row">
+        <div class="content-page">
+
+          <!--блок контента-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y1"></a> <center>Обзор Angular JS</center></div>
+              <div class="panel-body">
+                <p>AngularJS — JavaScript-фреймворк с открытым исходным кодом. Предназначен для разработки одностраничных приложений. Его цель — расширение браузерных приложений на основе MVC шаблона, а также упрощение тестирования и разработки.<br>
+                В данном видео приведён обзор преимуществ Angular JS и описано подключение фреймворка к веб-странице.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/X8EiFmecLSM" allowfullscreen></iframe>
+          </div>
+                                    <!--2 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y2"></a> <center>Scope в Angular JS</center></div>
+              <div class="panel-body">
+                <p>Рассматривается Dependency injection в Angular JS, а также одна из центральных концепций фреймворка - сервис $scope. Scope предназначен для взаимодействия JavaScript модели и DOM-дерева.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/_LvoXunzgYY" allowfullscreen></iframe>
+          </div>
+
+                                  <!--3 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y3"></a> <center>Инжекция зависимостей </center></div>
+              <div class="panel-body">
+                <p>Продолжаем рассматривать dependency injection в Angular JS. В этом видео мы подключим к нашему веб-приложению сторонний модуль, обеспечивающий дополнительную функциональность и осуществим валидацию формы при помощи этого модуля.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/AS3bS5NneSQ" allowfullscreen></iframe>
+          </div>
+
+                                  <!--4 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y4"></a> <center>Data Binding</center></div>
+              <div class="panel-body">
+                <p>Рассматриваются различные варианты Data Binding в Angular JS:  однонаправленный (интерполяция. используются фигурные скобки для вывода информации в разметку) и двунаправленный (с использованием директивы ng-model. Используется для двустороннего ввода-вывода между разметкой и моделью).
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/3WT56BaoESc" allowfullscreen></iframe>
+          </div>
+
+                                  <!--5 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y5"></a> <center>Директивы</center></div>
+              <div class="panel-body">
+                <p>В данном видео рассмотрены некоторые директивы Angular JS.<br>ng-if: позволяет добавлять или вырезать элемент DOM-дерева в зависимости от результата JavaScript-выражения<br>ng-show/ng-hide: позволяет скрывать и отображать элемент DOM-дерева в зависимости от результата JavaScript-выражения<br>ng-repeat: генерирует по одному элементу DOM-дерева для каждого элемента JavaScript-коллекции<br>ng-class: динамически добавляет CSS-классы элементу в зависимости от результатов вычисления JavaScript-выражений. принимает на вход JSON-объект.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/69FxjxbsOAA" allowfullscreen></iframe>
+          </div>
+
+                                  <!--6 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y6"></a> <center>Http-запросы</center></div>
+              <div class="panel-body">
+                <p>Рассмотрен процесс получения данных из внешнего REST сервиса при помощи стандартного элемента XMLHttpRequest.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/4707M7smUaw" allowfullscreen></iframe>
+          </div>
+
+                                  <!--7 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y7"></a> <center>$http-сервис</center></div>
+              <div class="panel-body">
+                <p>Рассматривается получение данных по протоколу HTTP при помощи Angular-сервиса $http, являющегося оболочкой над стандартным объектом XMLHttpRequest.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/LRctMBPJafE" allowfullscreen></iframe>
+          </div>
+
+                                  <!--8 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y8"></a> <center>Хэш-символ</center></div>
+              <div class="panel-body">
+                <p>В данном видео рассказывается о концепции Single Page Application и о роли хэш-символа (#) в этой концепции.<br>Hash-символ позволяет реализовать концепцию URI без перезагрузки страницы. То есть всё что находится справа от хэша может быть перехвачено на лету. Концепция hash-символа является ключевой при реализации SPA.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/jDhI_QTC8Mk" allowfullscreen></iframe>
+          </div>
+
+                                  <!--9 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y9"></a> <center>Маршрутизация и шаблоны</center></div>
+              <div class="panel-body">
+                <p>Рассматривается работа с модулем ngRoute, осуществляющего маршрутизацию внутри Single Page Application'а.<br>Маршруты настраиваются при помощи функции config, в которую передаётся callback, принимающий на вход routeProvider. Далее routeProvider конфигурируется при помощи функций when.<br>Для подключения SPA к разметке используется директива ng-view.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/bZvO1UcKIiQ" allowfullscreen></iframe>
+          </div>
+
+                                  <!--10 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y10"></a> <center>Создание сервиса</center></div>
+              <div class="panel-body">
+                <p>Рассмотрено создание и использование сервиса при помощи функции service(). Созданный сервис реализует паттерн Singleton и позволяет обмениваться данными между контроллерами SPA.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/Psa83XpXUAs" allowfullscreen></iframe>
+          </div>
+
+                                  <!--11 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y11"></a> <center>Создание директивы</center></div>
+              <div class="panel-body">
+                <p>Рассматривается создание кастомной директивы в Angular JS. Директивы используются для повторного использования HTML-кода и используют привязки Angular для отображения данных.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/M1Fmd6sHPtc" allowfullscreen></iframe>
+          </div>          
+
+                                  <!--12 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y12"></a> <center>Атрибуты и изолированный scope в директивах</center></div>
+              <div class="panel-body">
+                <p>Продолжаем рассматривать кастомные директивы Angular JS. В этом видео мы создадим изолированный scope для директивы и укажем атрибуты для передачи данных внутрь директивы.<br>Всего существует три типа атрибутов:<br>1) Однонаправленный биндинг значения. Обозначается знаком "@".<br>2) Двунаправленный биндинг объекта. Обозначается знаком "=".<br>3) Биндинг функции. Обозначается знаком "амперсанда".
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/78hqNGexmY8" allowfullscreen></iframe>
+          </div> 
+
+                                      <!--13 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y13"></a> <center>Compile and Linking</center></div>
+              <div class="panel-body">
+                <p>Продолжаем рассматривать кастомные директивы Angular JS. В этом видео мы используем функции compile и link для перехвата DOM-объекта директивы перед отображением.<br>Данный механизм может использоваться для проверок объектов scope, привязанных к директиве и изменения внешнего вида директивы в зависимости от результатов проверок.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/gRS6YlaMLIw" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--14 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y14"></a> <center>Трансклюзия</center></div>
+              <div class="panel-body">
+                <p>Продолжаем рассматривать кастомные директивы Angular JS. В этом видео рассматривается трансклюзия - включение части DOM-дерева внутрь директивы.<br>Данная функция позволяет включить в шаблон директивы тег ng-transclude, куда будет помещён текст, переданный в директиву методом трансклюзии.<br>Включается данная функция при помощи параметра transclude при объявлении директивы.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/URj1XPPYluM" allowfullscreen></iframe>
+          </div> 
+
+        </div>
+
+      <!--                                
+        <aside class="col-xs-6 col-sm-3 col-md-3 col-lg-3 context">
+          <div class="row">
+            <div class="col-lg-12">
+
+            </div>
+          </div>
+        </aside>
+                                
+        <article class="col-xs-6 col-sm-9 col-md-9 col-lg-9">
+          <div class="row">
+            <div class="col-lg-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sint sit quis eos maiores aliquid unde molestiae odit, recusandae deleniti, harum necessitatibus nobis a error repellat atque </div>
+          </div>
+        </article>
+       -->              
+      </div>
+    </div>
+  <div class="page-buffer"></div>
+</div>
+</div>
+
+<section class="footer">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Курсы</h4>
+                  <ul>
+                      <li class="line_rv"><a href="MacOSX.html">Mac OS X</a></li>
+               
+                        <li><a href="Angular.html">Angular JS</a></li>
+                        <li><a href="WCF.html">WCF</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Курсы</h4>
+                  <ul>
+                      <li><a href="AppleAutomator.html">Apple Automator</a></li>
+                        <li><a href="EntityFramework.html">Entity Framework</a></li>
+                        <li><a href="LinQ.html">LinQ</a></li>
+                        
+                       
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Связаться с нами</h4>
+                  <p><a href="https://plus.google.com/u/0/105254541079033546156">Google+</a></p>
+            <p><a href="http://www.youtube.com/user/inoneclick/">YouTube</a><br>
+
+        
+                </p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- на jQuery (необходим для Bootstrap - х JavaScript плагины) -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Включают все скомпилированные плагины (ниже), или включать отдельные файлы по мере необходимости -->  
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

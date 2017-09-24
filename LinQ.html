@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Выше 3 Мета-теги ** должны прийти в первую очередь в голове; любой другой руководитель контент *после* эти теги -->  
+    <title>In1click</title>
+
+    <!-- Bootstrap --> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->  
+    <!-- Предупреждение: Respond.js не работает при просмотре страницы через файл:// -->  
+    <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script >
+ <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->  
+  </head>
+  <body>
+<div class="page-wrapper">  
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand и toggle сгруппированы для лучшего отображения на мобильных дисплеях -->  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Меню</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">In1click</a>
+    </div>
+    <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->  
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="MacOSX.html">Mac OS X<span class="sr-only">(current)</span></a></li>
+        <li><a href="Angular.html">Angular JS</a></li>
+        <li><a href="EntityFramework.html">Entity Framework</a></li>
+        <li><a href="AppleAutomator.html">Apple Automator</a></li>
+        <li><a href="WCF.html">WCF</a></li>
+        <li class="active"><a href="LinQ.html">LinQ</a></li>        
+      <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Уроки по LinQ Часть 1<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#Y1">Основы LINQ-запросов</a></li>
+            <li><a href="#Y2">Методы расширения (extension methods) LINQ</a></li>
+            <li><a href="#Y3">Агрегатные функции LINQ</a></li>
+            <li><a href="#Y4">Функция Aggregate</a></li>
+            <li><a href="#Y5">Функция Select</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#Y6">Функция SelectMany</a></li>
+            <li><a href="#Y7">Функция OrderBy</a></li>
+            <li><a href="#Y8">Функция ThenBy</a></li>
+            <li><a href="#Y9">Функции Take/Skip</a></li>
+            <li><a href="#Y10">Отложенное исполнение (Deferred execution)</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#Y11">Conversion-операторы</a></li>
+            <li><a href="#Y12">Функции Cast/OfType</a></li>
+            <li><a href="#Y13">Функция GroupBy</a></li>
+            <li><a href="#Y14">Функция GroupBy с несколькими ключами</a></li>
+            <li><a href="#Y15">Операторы выборки (Select-операторы)</a></li>       
+          </ul>
+        </li>
+        <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Часть 2<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#Y16">Функция GroupJoin</a></li>
+            <li><a href="#Y17">Функция Join</a></li>
+            <li><a href="#Y18">Операция Left Join</a></li>
+            <li><a href="#Y19">Операция Cross Join</a></li>
+            <li><a href="#Y20">Функция Distinct</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#Y21">Функции объединения коллекций</a></li>
+            <li><a href="#Y22">Функции генерирования коллекций</a></li>
+            <li><a href="#Y23">Функция SequenceEqual</a></li>
+            <li><a href="#Y24">Функции Any, All и Contains</a></li>
+            <li><a href="#Y25">LinqPad</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#Y26">Создание XML-документа</a></li>
+            <li><a href="#Y27">Чтение XML-документа</a></li>
+            <li><a href="#Y28">Редактирование XML-документа</a></li>
+            <li><a href="#Y29">Преобразование в CSV-файл</a></li>
+            <li><a href="#Y30">Преобразование структуры XML-документа</a></li>
+          </ul>
+        </li>              
+      </ul>
+      
+      <!--<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Поиск">
+        </div>
+        <button type="submit" class="btn btn-default">Найти</button>
+      </form>-->
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li><a href="#">Карта сайта</a></li>-->
+        <li><a href="Contacts.html">О нас</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->  
+  </div><!-- /.container-fluid -->  
+</nav>
+
+                                    <!--Контент-->
+
+<div class="aside">
+    <div class="container">
+      <div class="row">
+        <div class="content-page">
+
+          <!--блок контента-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y1"></a> <center>Основы LINQ-запросов</center></div>
+              <div class="panel-body">
+                <p>LINQ — это набор появившихся в Visual Studio 2008 функций, который значительно расширяет возможности синтаксиса языков C# и Visual Basic. LINQ предлагает стандартные, легко запоминающиеся шаблоны для выполнения запросов и обновления данных, и эта технология может быть расширена с целью поддержки теоретически любого типа хранилища данных. Visual Studio содержит сборки поставщиков LINQ, позволяющие использовать LINQ с коллекциями .NET Framework, базами данных SQL Server, объектами DataSet ADO.NET и XML-документами.<br>MSDN.<br>В данном видео рассмотрены основы запросов на языке LINQ, разновидности запросов, а также показан пример выборки данных из базы MS SQL Server.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/q2iRtGmAAC4" allowfullscreen></iframe>
+          </div>
+                                    <!--2 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y2"></a> <center>Методы расширения (extension methods) LINQ</center></div><p>В данном видео рассмотрены методы расширения, способы их создания и применение.</p>
+              
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/Xol1Mh3nV6E" allowfullscreen></iframe>
+          </div>
+
+                                  <!--3 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y3"></a> <center>Агрегатные функции LINQ</center></div><p>В данном видео рассмотрены агрегатные функции языка LINQ, показаны преимущества их применения.</p>
+              
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/inKzrzhcbuc" allowfullscreen></iframe>
+          </div>
+
+                                  <!--4 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y4"></a> <center>Функция Aggregate</center></div><p>В данном видео рассматривается метод расширения Aggregate языка LINQ. Данный метод позволяет агрегировать все объекты коллекции в один результирующий объект того же типа.</p>
+              
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/alwJ2EYCQls" allowfullscreen></iframe>
+          </div>
+
+                                  <!--5 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y5"></a> <center>Функция Select</center></div><p>В данном ролике рассказано о применении функции Select, позволяющей перебирать элементы коллекции и генерировать новые типы на основе типов исходной коллекции.</p>
+              
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/FTO8ljQU-Q0" allowfullscreen></iframe>
+          </div>
+
+                                  <!--6 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y6"></a><center>Функция SelectMany</center></div>
+              <div class="panel-body">
+                <p>В этом ролике рассказывается о применении LINQ-функции SelectMany, осуществляющей перебор элементов коллекции, содержащих свои внутренние коллекции, и осуществляющей конкатенацию коллекций в одну результирующую.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/T9hEUqHzfXI" allowfullscreen></iframe>
+          </div>
+
+                                  <!--7 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y7"></a> <center>Функция OrderBy</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена сортировка коллекций при помощи LINQ-функций OrderBy и OrderByDescending.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/PuJ0eAoUcAA" allowfullscreen></iframe>
+          </div>
+
+                                  <!--8 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y8"></a> <center>Функция ThenBy</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена сортировка коллекций при помощи LINQ-функций OrderBy и ThenBy.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/zy8jl3k5-JM" allowfullscreen></iframe>
+          </div>
+
+                                  <!--9 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y9"></a> <center>Функции Take/Skip</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена выборка элементов коллекции при помощи LINQ-функций Take и Skip.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/ox25x8wvj1U" allowfullscreen></iframe>
+          </div>
+
+                                  <!--10 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y10"></a> <center>Отложенное исполнение (Deferred execution)</center></div>
+              <div class="panel-body">
+                <p>Рассмотрено отложенное (deferred) и немедленное (immediate) исполнение LINQ-запросов
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/lpzIl-w5wiU" allowfullscreen></iframe>
+          </div>
+
+                                  <!--11 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y11"></a> <center>Conversion-операторы</center></div>
+              <div class="panel-body">
+                <p>Рассматриваются операторы конверсии коллекций:<br>ToArray - преобразование к массиву,<br>ToList - преобразование к списку,<br>ToDictionary - преобразование в словарь,<br>ToLookup - преобразование в объект Lookup.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/zzyO6BMxgKE" allowfullscreen></iframe>
+          </div>          
+
+                                  <!--12 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y12"></a> <center>Функции Cast/OfType</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена функция Cast, выполняющая приведение типов для каждого элемента коллекции. Если приведение типа для одного из элементов невозможно, то генерируется исключение InvalidCastException.<br>Функция OfType отбирает только те элементы коллекции, для которых возможно приведение к заданному типу, после чего возвращает коллекцию приведённых типов.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/uIm6DmazkGM" allowfullscreen></iframe>
+          </div> 
+
+                                      <!--13 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y13"></a> <center>Функция GroupBy</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена функция GroupBy, выполняющая группировку элементов коллекции по ключевому признаку. Ключевой признак задаётся лямбда-выражением, передаваемым функции в качестве аргумента.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/iIVCYtEjh48" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--14 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y14"></a> <center>Функция GroupBy с несколькими ключами</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена функция GroupBy, выполняющая группировку элементов коллекции по нескольким ключевым признакам. Ключевые признаки задаются лямбда-выражением, передаваемым функции в качестве аргумента.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/w20Z5mSO5Qg" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--15 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y15"></a> <center>Операторы выборки (Select-операторы)</center></div>
+              <div class="panel-body">
+                <p>Рассмотрены Select-операторы, производящие выборку единственного элемента из коллекции:<br>First - выборка первого по счёту элемента коллекции. В случае отсутствия элементов в коллекции генерируется исключение InvalidOperationException.<br>FirstOrDefault - выборка первого по счёту элемента коллекции. В случае отсутствия элементов в коллекции возвращается значение по умолчанию.<br>Last - выборка последнего по счёту элемента коллекции. В случае отсутствия элементов в коллекции генерируется исключение InvalidOperationException.<br>LastOrDefault - выборка последнего по счёту элемента коллекции. В случае отсутствия элементов в коллекции возвращается значение по умолчанию.<br>Single - выборка единственного элемента коллекции. В случае отсутствия элементов в коллекции, либо при наличии более одного элемента генерируется исключение InvalidOperationException.<br>SingleOrDefault - выборка единственного элемента коллекции. В случае отсутствия элементов в коллекции возвращается значение по умолчанию. При наличии более одного элемента генерируется исключение InvalidOperationException.<br>ElementAt - возвращает элемент по заданному индексу (номеру позиции). Нумерация позиций начинается с нуля. В случае отсутствия элементов в коллекции генерируется исключение InvalidOperationException.<br>ElementAtOrDefault - возвращает элемент по заданному индексу (номеру позиции). Нумерация позиций начинается с нуля. В случае отсутствия элементов в коллекции возвращается значение по умолчанию.<br>DefaultIfEmpty - в случае наличия элементов в коллекции возвращает коллекцию без изменений. В случае отсутствия элементов - возвращает коллекцию, содержащую единственный элемент - значение по умолчанию.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/TjN2J7ZHX8o" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--16 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y16"></a> <center>Функция GroupJoin</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена функция GroupJoin, выполняющая объединение коллекций по ключевому признаку и группировку элементов коллекции. Ключевые признаки задаются лямбда-выражением, передаваемым функции в качестве аргумента.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/Ypa3pF4iif8" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--17 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y17"></a> <center>Функция Join</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена функция Join, выполняющая объединение коллекций по ключевому признаку. Ключевые признаки задаются лямбда-выражением, передаваемым функции в качестве аргумента. Функция реализует операцию Inner Join, то есть в результирующий набор входят только те элементы, для которых есть сопоставимый элемент в другой коллекции.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/meNCgnlAPC4" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--18 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y18"></a> <center>Операция Left Join</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена реализация операции Left Join, которая включает в результирующий набор все элементы первой (LEFT) коллекции. Из второй (RIGHT) коллекции выбираются только те элементы, для которых есть сопоставимый элемент в первой коллекции.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe  src="https://www.youtube.com/embed/ZjwFNRcsFBM"  allowfullscreen></iframe>
+          </div> 
+
+                                    <!--19 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y19"></a> <center>Операция Cross Join</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена реализация операции Cross Join, которая сопоставляет каждый элемент первой (LEFT) коллекции с каждым элементом второй (RIGHT) коллекции. Данная операция известна также под названием "Декартово произведение".
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/ApYOeJqZbnw" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--20 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y20"></a><center>Функция Distinct</center></div>
+              <div class="panel-body">
+                <p>Рассматривается метод расширения Distinct(), удаляющий из коллекций дублирующуюся информацию (то есть одинаковые экземпляры типов). Для составных типов собственного изготовления требуется указать, каким образом следует сравнивать экземпляры этого типа между собой.<br>Есть 3 способа сделать это:<br>1) Создание класса, реализующего IEqualityComparer для вашего типа и передача экземпляра этого comparer'а перегруженному методу Distinct.<br>2) Переопределение методов Equals() и GetHashCode() в вашем составном типе.<br>3) Создание нового анонимного типа с теми же полями, что и у вашего класса и применение метода Distinct к коллекции анонимных типов. В анонимном типе методы Equals() и GetHashCode() будут переопределены автоматически.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/WSm6uEtgqzk" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--21 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y21"></a> <center>Функции объединения коллекций</center></div>
+              <div class="panel-body">
+                <p>Рассмотрены функции объединения двух однотипных коллекций:<br>1) Функция Union - выполняет объединение двух коллекций в одну результирующую. При объединении дублирующие элементы удаляются. Если коллекции содержат составные типы, то необходимо позаботиться о переопределении методов Equals и GetHashCode. Подробнее это рассматривается в 20-й части данного плейлиста.<br>2) Функция Concat - выполняет объединение коллекций подобно функции Union, но не удаляет из результирующего набора повторяющиеся элементы.<br>3) Функция Intersect - объединяет две коллекции. В результирующий набор включаются только те элементы, которые содержатся в обеих коллекциях.<br>4) Функция Except - объединяет две коллекции. В результирующий набор включаются только те элементы, которые содержатся в первой коллекции, но не содержатся во второй.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/1J8R538aMhA" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--22 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y22"></a> <center>Функции генерирования коллекций</center></div>
+              <div class="panel-body">
+                <p>Рассматриваются функции генерирования коллекций:<br>1) Range(int, int) - принимает два аргумента типа integer. Первый аргумент определяет стартовый элемент коллекции, второй показывает, сколько элементов должно быть в результирующей коллекции. Возвращает коллекцию IEnumerable(int), содержащую диапазон значений с шагом 1.<br>2) Repeat(TElement, int) - принимает два аргумента. Первый указывает на элемент, из которого необходимо создать коллекцию. Второй указывает, сколько раз необходимо повторить элемент. Возвращает коллекцию IEnumerable(TElement), содержащую заданное количество одинаковых элементов.<br>3) Empty(T) - генерирует пустую коллекцию IEnumerable(T), не содержащую ни одного элемента. Применяется в тех случаях, когда необходимо вернуть пустой результат, но применение null недопустимо (может вызвать исключение NullReferenceException).
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/jaOIXHAPj3o" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--23 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y23"></a> <center>Функция SequenceEqual</center></div>
+              <div class="panel-body">
+                <p>Рассмотрена функция SequenceEqual, выполняющая поэлементное сравнение двух однотипных коллекций и возвращающая значение True, если коллекции равны и значение False, если коллекции не равны. Равенство коллекций будет установлено при соблюдении следующих условий:<br>1) Одинаковое количество элементов в коллекциях.<br>2) На каждом месте в коллекциях находятся одинаковые элементы.<br>Если порядок элементов в коллекциях не важен, а важно только содержание одинаковых элементов в коллекциях, то перед применением функции SequenceEqual следует отсортировать обе коллекции при помощи функции OrderBy.<br>Если коллекции содержат составные типы, то необходимо реализовать методы Equals и GetHashCode в соответствующем типе. Сделать это можно тремя способами, которые рассмотрены в 20-й части данного плейлиста
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/YCJFBgyj4qE" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--24 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y24"></a> <center>Функции Any, All и Contains</center></div>
+              <div class="panel-body">
+                <p>Рассмотрены функции поэлементной проверки коллекции:<br>1) Функция Any(Func) - проверяет каждый элемент коллекции и возвращает True, если хотя бы один элемент удовлетворяет заданному условию. Условие передаётся функции в виде лямбда-выражения. Перегруженная версия Any() без параметров возвращает True, если коллекция содержит хотя бы один элемент (то есть коллекция не пустая).<br>2) Функция All(Func) - проверяет каждый элемент коллекции и возвращает True, если все элементы коллекции удовлетворяют заданному условию. Условие передаётся функции в виде лямбда-выражения.<br>3) Функция Contains(TElement) - принимает экземпляр того же типа, что и коллекция и возвращает True, если данная коллекция содержит такой элемент. В случае работы с составными типами необходимо переопределить методы Equals и GetHashCode в соответствующем типе.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/ewZLKtsiWY8" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--25 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y25"></a> <center>LinqPad</center></div>
+              <div class="panel-body">
+                <p>Инструмент отладки LinqPad можно бесплатно скачать с официального сайта linqpad.net. Данная программа позволяет писать и отлаживать LINQ-запросы, просматривать лямбда-выражения, в которые могут быть преобразованы запросы, просматривать IL-код, который генерируется из вашего запроса. Поддерживается LINQ-to-SQL - можно подключаться к базам данных MS SQL и любым другим, поддерживающим протокол ODBC. При подключении к базам данных можно просматривать SQL-выражение, которое генерируется из вашего LINQ-запроса. Поддерживается экспорт в MS Word и MS Excel.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/sBFtu07hFkw" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--26 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y26"></a> <center>Создание XML-документа</center></div>
+              <div class="panel-body">
+                <p>Рассмотрен процесс создания XML-документа при помощи языка LINQ-to-XML для C#.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/9-3O4d8qr_E" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--27 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y27"></a> <center>Чтение XML-документа</center></div>
+              <div class="panel-body">
+                <p>Рассмотрен процесс чтения информации из XML-документа при помощи языка LINQ-to-XML для C#.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/oOv3mW9WnJw" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--28 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y28"></a> <center>Редактирование XML-документа</center></div>
+              <div class="panel-body">
+                <p>Рассмотрен процесс редактирования XML-документа при помощи языка LINQ-to-XML для C#.<br>1) Add() - функция позволяет вставить новый элемент в конец XML-файла.<br>2) AddFirst() - функция позволяет вставить новый элемент в начало XML-файла.<br>3) AddBeforeSelf() - функция позволяет вставить новый элемент перед текущим элементом XML-файла.<br>4) AddAfterSelf() - функция позволяет вставить новый элемент после текущего элемента XML-файла.<br>5) Remove() - функция позволяет удалить текущий элемент XML-документа.<br>6) SetElementValue() - функция позволяет установить значение вложенного элемента для текущего элемента XML-документа.<br>7) SetAttributeValue() - функция позволяет установить значение атрибута для текущего элемента XML-документа.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/RJbuijXd3Nk" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--29 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y29"></a> <center>Преобразование в CSV-файл</center></div>
+              <div class="panel-body">
+                <p>Рассмотрен процесс преобразования XML-документа в формат CSV (Comma Separated Values) при помощи языка LINQ-to-XML для C#.<br>CSV (от англ. Comma-Separated Values — значения, разделённые запятыми) — текстовый формат, предназначенный для представления табличных данных. Каждая строка файла — это одна строка таблицы. Значения отдельных колонок разделяются разделительным символом (delimiter) — запятой (,).
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/foj-71fL2Vs" allowfullscreen></iframe>
+          </div> 
+
+                                    <!--30 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y30"></a> <center>Преобразование структуры XML-документа</center></div>
+              <div class="panel-body">
+                <p>Рассмотрен процесс преобразования коллекции XML-элементов Student с полями Name, Gender, Age, Country к коллекции XML-элементов Student с полями Name, Gender, Age, сгруппированных по признаку Country. То есть элементы Student вложены в разные коллекции XML-элементов Country в зависимости от поля Country исходного элемента.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/8FSoO8VlE6g" allowfullscreen></iframe>
+          </div> 
+        </div>
+
+      <!--                                
+        <aside class="col-xs-6 col-sm-3 col-md-3 col-lg-3 context">
+          <div class="row">
+            <div class="col-lg-12">
+
+            </div>
+          </div>
+        </aside>
+                                
+        <article class="col-xs-6 col-sm-9 col-md-9 col-lg-9">
+          <div class="row">
+            <div class="col-lg-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sint sit quis eos maiores aliquid unde molestiae odit, recusandae deleniti, harum necessitatibus nobis a error repellat atque </div>
+          </div>
+        </article>
+       -->              
+      </div>
+    </div>
+  <div class="page-buffer"></div>
+</div>
+</div>
+
+<section class="footer">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Курсы</h4>
+                  <ul>
+                      <li class="line_rv"><a href="MacOSX.html">Mac OS X</a></li>
+               
+                        <li><a href="Angular.html">Angular JS</a></li>
+                        <li><a href="WCF.html">WCF</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Курсы</h4>
+                  <ul>
+                      <li><a href="AppleAutomator.html">Apple Automator</a></li>
+                        <li><a href="EntityFramework.html">Entity Framework</a></li>
+                        <li><a href="LinQ.html">LinQ</a></li>
+                        
+                       
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Связаться с нами</h4>
+                  <p><a href="https://plus.google.com/u/0/105254541079033546156">Google+</a></p>
+            <p><a href="http://www.youtube.com/user/inoneclick/">YouTube</a><br>
+
+        
+                </p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- на jQuery (необходим для Bootstrap - х JavaScript плагины) -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Включают все скомпилированные плагины (ниже), или включать отдельные файлы по мере необходимости -->  
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

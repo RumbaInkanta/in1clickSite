@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Выше 3 Мета-теги ** должны прийти в первую очередь в голове; любой другой руководитель контент *после* эти теги -->  
+    <title>In1click</title>
+
+    <!-- Bootstrap --> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->  
+    <!-- Предупреждение: Respond.js не работает при просмотре страницы через файл:// -->  
+    <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script >
+ <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->  
+  </head>
+  <body>
+<div class="page-wrapper">  
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand и toggle сгруппированы для лучшего отображения на мобильных дисплеях -->  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Меню</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">In1click</a>
+    </div>
+    <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->  
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="MacOSX.html">Mac OS X<span class="sr-only">(current)</span></a></li>
+        <li><a href="Angular.html">Angular JS</a></li>
+        <li class="active"><a href="EntityFramework.html">Entity Framework</a></li>
+        <li><a href="AppleAutomator.html">Apple Automator</a></li>
+        <li><a href="WCF.html">WCF</a></li>
+        <li><a href="LinQ.html">LinQ</a></li>        
+      <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Уроки по Entity Framework<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#Y1">Обзор Entity Framework</a></li>
+            <li><a href="#Y2">Кастомизация заголовков таблиц и столбцов</a></li>
+            <li><a href="#Y3">Создание инициализатора базы данных</a></li>
+            <!--<li role="separator" class="divider"></li>-->
+            <li><a href="#Y4">Создание кастомного инициализатора базы данных</a></li>
+            <li><a href="#Y5">Использование хранимых процедур</a></li>
+            <li><a href="#Y6">Маппинг сущности в две таблицы</a></li>
+            <li><a href="#Y7">Маппинг таблицы в две сущности</a></li>
+            <li><a href="#Y8">Условный маппинг</a></li>
+            <li><a href="#Y9">Self referencing</a></li>
+            <li><a href="#Y10">TPH наследование</a></li>
+            <li><a href="#Y11">TPT наследование</a></li>
+            <li><a href="#Y12">Отношение Many to Many</a></li>
+            
+          </ul>
+        </li>       
+      </ul>
+      
+      <!--<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Поиск">
+        </div>
+        <button type="submit" class="btn btn-default">Найти</button>
+      </form>-->
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li><a href="#">Карта сайта</a></li>-->
+        <li><a href="Contacts.html">О нас</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->  
+  </div><!-- /.container-fluid -->  
+</nav>
+
+                                    <!--Контент-->
+
+<div class="aside">
+    <div class="container">
+      <div class="row">
+        <div class="content-page">
+
+          <!--блок контента-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y1"></a> <center>Обзор Entity Framework</center></div>
+              <div class="panel-body">
+                <p>Entity Framework - объектно-ориентированная технология доступа к данным, является object-relational mapping (ORM) решением для .NET Framework от Microsoft. Предоставляет возможность взаимодействия с объектами как посредством LINQ в виде LINQ to Entities, так и с использованием Entity SQL.<br>В данном видео рассматриваются три стратегии создания приложения с использование EF:<br>1) Database first - модель EDM создаётся на основе уже существующей базы данных, содержащей данные.<br>2) Model first - модель EDM создаётся в графическом дизайнере. На её основе генерируется схема базы данных и классы .NET<br>3) Code first - в первую очередь создаются классы .NET (вручную), а затем на основе классов генерируется схема базы данных.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/4_K4MgWHzb8?list=PL-ss7IpVOiB6_10gVWKJHr_BU14YXCcjw" allowfullscreen></iframe>
+          </div>
+                                    <!--2 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y2"></a> <center>Кастомизация заголовков таблиц и столбцов</center></div>
+              <div class="panel-body">
+                <p>В данном видео рассматривается настройка заголовков таблиц и столбцов базы данных, а также их отвязка от названий полей классов.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/hmFPq604RZQ?list=PL-ss7IpVOiB6_10gVWKJHr_BU14YXCcjw" allowfullscreen></iframe>
+          </div>
+
+                                  <!--3 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y3"></a> <center>Создание инициализатора базы данных</center></div>
+              <div class="panel-body">
+                <p>Рассмотрены два варианта инициализаторов:<br>1) DropCreateDatabaseIfModelChanges - пересоздаёт базу данных в случае несовпадения EDM-модели и схемы базы данных. Используется при классическом Code First подходе.<br>2) DropCreateDatabaseAlways - пересоздаёт базу данных при каждой инициализации EDM. Используется в случаях, когда данные в БД актуальны только на протяжении цикла работы приложения.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/6gRwhuDnMmM?list=PL-ss7IpVOiB6_10gVWKJHr_BU14YXCcjw" allowfullscreen></iframe>
+          </div>
+
+                                  <!--4 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y4"></a> <center>Создание кастомного инициализатора базы данных</center></div>
+              <div class="panel-body">
+                <p>Кастомный инициализатор может наследоваться от одного из двух классов:<br>1) DropCreateDatabaseIfModelChanges - пересоздаёт базу данных в случае несовпадения EDM-модели и схемы базы данных. Используется при классическом Code First подходе.<br>2) DropCreateDatabaseAlways - пересоздаёт базу данных при каждой инициализации EDM. Используется в случаях, когда данные в БД актуальны только на протяжении цикла работы приложения.<br>При переопределении метода Seed() мы можем задать дополнительную логику инициализации БД. Например, в данном ролике показано наполнение БД начальными данными при каждом создании.<br>P.S. не забудьте пробросить вызов Seed() в базовый класс (последняя строчка base.Seed()).
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/KN5t9QRpeZg?list=PL-ss7IpVOiB6_10gVWKJHr_BU14YXCcjw" allowfullscreen></iframe>
+          </div>
+
+                                  <!--5 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y5"></a> <center>Использование хранимых процедур</center></div>
+              <div class="panel-body">
+                <p>Рассматривается подключение к EDM-модели хранимых процедур БД в контексте 2-х стратегий:<br>1) Database first - при создании EDM указываем необходимые таблицы и хранимые процедуры. Делаем щелчок правой кнопкой по сущности, к которой хотим привязать процедуру, и выбираем пункт меню Mapping stored procedures.<br>2) Code first - в контексте переопределяем метод OnModelCreate и, получив ModelBuilder в качестве параметра, выбираем нужный тип сущности, после чего привязываем процедуры методом MapStoredProcedures(). Этот метод также имеет перегруженную версию, принимающую на вход лямбда-выражение, позволяющее настроить маппинг более гибко.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/l20sGL51VZ8" allowfullscreen></iframe>
+          </div>
+
+                                  <!--6 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y6"></a> <center>Маппинг сущности в две таблицы</center></div>
+              <div class="panel-body">
+                <p>При необходимости мы можем привязывать сущность частями к разным таблицам. Для этого:<br>1) При Database first - переносим все поля из двух сущностей в одну и настраиваем маппинг вручную при помощи пункта Table Mapping.<br>2) При Code first - в классе, унаследованном от DbContext при создании модели (переопределённый метод OnModelCreating) настраиваем маппинг при помощи метода Map(). Данный метод принимает на вход лямбда-выражение, указывающее:<br>а) набор свойств класса, подлежащих маппингу.<br> б) имя таблицы, в которую будут помещены эти свойства<br>Обратите внимание, что один вызов Map() соответствует одному маппингу. То есть для маппинга в две таблицы необходимо вызвать метод дважды.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/Vt60hALH9nk" allowfullscreen></iframe>
+          </div>
+
+                                  <!--7 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y7"></a> <center>Маппинг таблицы в две сущности</center></div>
+              <div class="panel-body">
+                <p>При необходимости мы можем привязывать таблицу к двум разным сущностям. Для этого:<br>1) При Database first - после генерации модели вручную создаём новую сущность и настраиваем Table mapping. Далее создаём связь один к одному и задаём параметры referential constraint.<br>2) При Code first - в классе, унаследованном от DbContext при создании модели (переопределённый метод OnModelCreating) настраиваем маппинг при помощи метода HasKey() и ToTable().<br>Затем Используя методы HasRequired() и WithRequiredPrincipal() указываем ссылки сущностей друг на друга.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/SNIu9BCtfQU" allowfullscreen></iframe>
+          </div>
+
+                                  <!--8 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y8"></a> <center>Условный маппинг</center></div>
+              <div class="panel-body">
+                <p>Условный маппинг позволяет добавлять условия отбора данных из таблицы и таким образом избежать написания лишних конструкций типа where().<br>Для добавления условия - щёлкните правой кнопкой мыши на сущности и выберите Table mapping. Затем в панели настройки маппинга выбираем add condition и указываем поле и условие отбора.<br>!!!ВНИМАНИЕ!!! В случае указания столбца таблицы в качестве условия маппинга необходимо удалить данный столбец из сущности.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/V3RvAUC_Vls" allowfullscreen></iframe>
+          </div>
+
+                                  <!--9 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y9"></a> <center>Self referencing</center></div>
+              <div class="panel-body">
+                <p>Self referencing позволяет настроить ссылку сущности на сущность того же типа. В данном видео рассмотрен пример с сотрудниками компании, которые могут иметь менеджера, также являющегося сотрудником компании.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/rlLW0BI2zdU" allowfullscreen></iframe>
+          </div>
+
+                                  <!--10 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y10"></a> <center>TPH наследование</center></div>
+              <div class="panel-body">
+                <p>Наследование в Entity Framework может реализовываться двумя способами:<br>1) TPH (Table Per Hierarchy) - в этом случае создаётся общая таблица, содержащая все поля семейства объектов. Конкретный класс определяется при помощи дополнительной колонки Discriminator.<br>2) TPT (Table Per Type) - создаётся отдельная таблица для базового класса и отдельная таблица на каждый дочерний класс. Конкретный класс определяется поиском ключей в дочерних таблицах, ссылающихся на базовую.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/3oVHJGp-skQ" allowfullscreen></iframe>
+          </div>
+
+                                  <!--11 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y11"></a> <center>TPT наследование</center></div>
+              <div class="panel-body">
+                <p>Наследование в Entity Framework может реализовываться двумя способами:<br>1) TPH (Table Per Hierarchy) - в этом случае создаётся общая таблица, содержащая все поля семейства объектов. Конкретный класс определяется при помощи дополнительной колонки Discriminator.<br>2) TPT (Table Per Type) - создаётся отдельная таблица для базового класса и отдельная таблица на каждый дочерний класс. Конкретный класс определяется поиском ключей в дочерних таблицах, ссылающихся на базовую.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/spjhEO4wWB8" allowfullscreen></iframe>
+          </div>          
+
+                                  <!--12 block-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading"><a name="Y12"></a> <center>Отношение Many to Many</center></div>
+              <div class="panel-body">
+                <p>Отношение Many-to-Many подразумевает создание таблицы-связки, обеспечивающей сопоставление записей из двух разных таблиц. В данном видео рассматривается пример с сопоставлением курсов и студентов. Один курс может иметь несколько подписавшихся студентов, равно как и каждый студент может подписаться на несколько курсов. То есть имеем дело с классическим Many-to-Many.<br>В коде создаются две сущности (Student и Course). Обратите внимание, что не создаётся сущность для таблицы-связки (этот вопрос будет рассмотрен в следующем видео). Каждая из двух созданных сущностей содержит коллекцию сущностей противоположного типа.<br>Рассматриваются как Database first, так и Code first подходы.
+                </p>
+              </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/ODj7Mdzv4f8" allowfullscreen></iframe>
+          </div> 
+
+        </div>
+
+      <!--                                
+        <aside class="col-xs-6 col-sm-3 col-md-3 col-lg-3 context">
+          <div class="row">
+            <div class="col-lg-12">
+
+            </div>
+          </div>
+        </aside>
+                                
+        <article class="col-xs-6 col-sm-9 col-md-9 col-lg-9">
+          <div class="row">
+            <div class="col-lg-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sint sit quis eos maiores aliquid unde molestiae odit, recusandae deleniti, harum necessitatibus nobis a error repellat atque </div>
+          </div>
+        </article>
+       -->              
+      </div>
+    </div>
+  <div class="page-buffer"></div>
+</div>
+</div>
+
+<section class="footer">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Курсы</h4>
+                  <ul>
+                      <li class="line_rv"><a href="MacOSX.html">Mac OS X</a></li>
+               
+                        <li><a href="Angular.html">Angular JS</a></li>
+                        <li><a href="WCF.html">WCF</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Курсы</h4>
+                  <ul>
+                      <li><a href="AppleAutomator.html">Apple Automator</a></li>
+                        <li><a href="EntityFramework.html">Entity Framework</a></li>
+                        <li><a href="LinQ.html">LinQ</a></li>
+                        
+                       
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4">
+              <div class="footer_dv">
+                  <h4>Связаться с нами</h4>
+                  <p><a href="https://plus.google.com/u/0/105254541079033546156">Google+</a></p>
+            <p><a href="http://www.youtube.com/user/inoneclick/">YouTube</a><br>
+
+        
+                </p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- на jQuery (необходим для Bootstrap - х JavaScript плагины) -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Включают все скомпилированные плагины (ниже), или включать отдельные файлы по мере необходимости -->  
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
